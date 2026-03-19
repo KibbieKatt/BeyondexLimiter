@@ -3073,7 +3073,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Beyondex Current Limiter\nUSB 2.0 200mA Limit\nv0.2 Designed by Kibbie"
+	(gr_text "Beyondex Current Limiter\nUSB 2.0 200mA Limit\nv0.3 Designed by Kibbie"
 		(at 168.8 97.5 0)
 		(layer "B.SilkS")
 		(uuid "635ecd51-38d2-497c-b464-ce56ee4f56b7")
