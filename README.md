@@ -2,10 +2,13 @@
 
 This is a simple USB 2.0 Type C current limiter built around the [MIC2544-1YM](resources/mic2544.pdf) current limiting IC. The default current limit is set at 200mA, but the resistors can be swapped out according to the data sheet for any limit bwteen 100mA to 1.5A.
 
-Resistor configurations I've used:
+Resistor configurations:
 
-* 150 + 330 + 680 = 198mA limit
-* 2k + 150 +150 = 100mA limit
+* 1k + 150 = 200mA limit
+* 1.4k + 133 = 150mA limit
+* 2k + 300 = 100mA limit
+
+The design also has 2 through holes so that it can be hand-modded to a different limit if necessary.
 
 The left port is for the end device and the right port is to connect upstream.
 
@@ -18,10 +21,10 @@ The back contains the specs and additional input/output labels.
 ## How to Order
 
 1. Go to the [latest release](https://github.com/KibbieKatt/BeyondexLimiter/releases)
-2. Download:
-    * `BeyondexLimiter.zip` - not the Source code!
-    * `bom.csv`
-    * `positions.csv`
+2. Download (choose 100mA, 150mA, or 200mA):
+    * `BeyondexLimiter_200mA.zip` - not the Source code!
+    * `BeyondexLimiter_200mA_bom.csv`
+    * `BeyondexLimiter_positions.csv`
 3. Upload the zip file to JLCPCB's quote page.
 4. Verify that board image is shown and size is auto populated.
     * If it doesn't show the PCB image or size after uploading completes, try making an account, uploading the file, and checking Projects > Quotes if it still doesn't show up.
