@@ -424,13 +424,13 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R3"
-			(at -0.525 -1.16585 180)
+			(at -0.525 -1 180)
 			(layer "F.SilkS")
 			(uuid "6e8f39d9-957e-4f7f-93ad-783341757d22")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.75 0.75)
+					(thickness 0.1)
 				)
 			)
 		)
@@ -576,13 +576,13 @@
 		(uuid "ac46cb7a-17e3-469a-9ca4-62d4c75d0150")
 		(at 177.9125 97.5 90)
 		(property "Reference" "USB1"
-			(at -5.7 -2.0125 180)
+			(at -5.8 -2.0125 180)
 			(layer "F.SilkS")
 			(uuid "87c6e8a9-d11f-4352-8076-be60163bc4d2")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.75 0.75)
+					(thickness 0.1)
 				)
 			)
 		)
@@ -1312,14 +1312,14 @@
 		(uuid "b777f46a-b36b-43b5-9be7-f2f59d3c6425")
 		(at 159.6 97.5 -90)
 		(property "Reference" "USB2"
-			(at 5.7 -2.1 0)
+			(at 5.8 -2.1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "5009857b-30e9-4449-a386-b8db21e8964d")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.75 0.75)
+					(thickness 0.1)
 				)
 			)
 		)
@@ -2776,13 +2776,13 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0.475 -1.16585 180)
+			(at 0.475 -1 180)
 			(layer "F.SilkS")
 			(uuid "da250f0b-6ef9-46ea-b54d-94115fd098a7")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.75 0.75)
+					(thickness 0.1)
 				)
 			)
 		)
@@ -2930,13 +2930,13 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0.005 -1.16585 180)
+			(at 0.005 -1 180)
 			(layer "F.SilkS")
 			(uuid "0b870ace-0782-412c-942f-9e0da920595e")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.75 0.75)
+					(thickness 0.1)
 				)
 			)
 		)
@@ -3078,6 +3078,38 @@
 		)
 	)
 	(gr_line
+		(start 157.5 93)
+		(end 157.5 102)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c9a2e069-1bef-4ebc-bd3d-f9418d8a2d24")
+	)
+	(gr_arc
+		(start 157.5 93)
+		(mid 158.085786 91.585786)
+		(end 159.5 91)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ed851121-b8b1-4bac-9f59-022563c4fb67")
+	)
+	(gr_arc
+		(start 159.5 104)
+		(mid 158.085786 103.414214)
+		(end 157.5 102)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "bf2a497c-cf55-43b0-870e-ff373450f72f")
+	)
+	(gr_line
 		(start 159.5 104)
 		(end 178 104)
 		(stroke
@@ -3097,16 +3129,6 @@
 		(layer "Edge.Cuts")
 		(uuid "5d3c83a6-f9eb-43b1-aea5-6335c8a32d11")
 	)
-	(gr_line
-		(start 180 102)
-		(end 180 93)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "5e3abb33-4ff3-4c13-bf91-310a04d4134f")
-	)
 	(gr_arc
 		(start 178 91)
 		(mid 179.414214 91.585786)
@@ -3119,27 +3141,6 @@
 		(uuid "b7b4d619-ce6d-4c06-b739-68fe8c06d8fa")
 	)
 	(gr_arc
-		(start 159.5 104)
-		(mid 158.085786 103.414214)
-		(end 157.5 102)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "bf2a497c-cf55-43b0-870e-ff373450f72f")
-	)
-	(gr_line
-		(start 157.5 93)
-		(end 157.5 102)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "c9a2e069-1bef-4ebc-bd3d-f9418d8a2d24")
-	)
-	(gr_arc
 		(start 180 102)
 		(mid 179.414214 103.414214)
 		(end 178 104)
@@ -3150,36 +3151,25 @@
 		(layer "Edge.Cuts")
 		(uuid "e70ea352-000d-496a-bdc1-f6fac23b8be8")
 	)
-	(gr_arc
-		(start 157.5 93)
-		(mid 158.085786 91.585786)
-		(end 159.5 91)
+	(gr_line
+		(start 180 102)
+		(end 180 93)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "ed851121-b8b1-4bac-9f59-022563c4fb67")
+		(uuid "5e3abb33-4ff3-4c13-bf91-310a04d4134f")
 	)
 	(gr_line
-		(start 169.2 109.07)
-		(end 169.2 110.7)
+		(start 160.9 110.3)
+		(end 160.9 108.84)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.1")
-		(uuid "28638431-b12d-4d31-930f-db9a054b101c")
-	)
-	(gr_line
-		(start 167.81 110)
-		(end 170.1 110)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.1")
-		(uuid "57832283-cf07-40e5-86fe-0df1a6a2441b")
+		(uuid "81cda5cf-a15e-46bb-afc4-9dbda9a24a8e")
 	)
 	(gr_line
 		(start 162.42 110)
@@ -3192,14 +3182,48 @@
 		(uuid "65cbe6b6-5a59-429b-8d4e-a2fc92e7dd1a")
 	)
 	(gr_line
-		(start 160.9 110.3)
-		(end 160.9 108.84)
+		(start 167.81 110)
+		(end 170.1 110)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.1")
-		(uuid "81cda5cf-a15e-46bb-afc4-9dbda9a24a8e")
+		(uuid "57832283-cf07-40e5-86fe-0df1a6a2441b")
+	)
+	(gr_line
+		(start 169.2 109.07)
+		(end 169.2 110.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "28638431-b12d-4d31-930f-db9a054b101c")
+	)
+	(gr_text "Output"
+		(at 159.5 92.3 0)
+		(layer "F.SilkS")
+		(uuid "f826b748-2014-474c-ad0f-13d13530b982")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Input"
+		(at 174.8 92.3 0)
+		(layer "F.SilkS")
+		(uuid "939f0be7-e3ef-43ea-bbe1-46ad162ed8ca")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
 	)
 	(gr_text "Beyondex Current Limiter\nUSB 2.0 200mA Limit\nv0.1 Designed by Kibbie"
 		(at 168.8 97.5 0)
@@ -3211,6 +3235,30 @@
 				(thickness 0.09375)
 			)
 			(justify mirror)
+		)
+	)
+	(gr_text "Output\nDownstream"
+		(at 160 97.5 90)
+		(layer "B.SilkS")
+		(uuid "9c589255-8d4e-4c19-b894-2240d548144d")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify bottom mirror)
+		)
+	)
+	(gr_text "Input\nUpstream"
+		(at 177.6 97.5 270)
+		(layer "B.SilkS")
+		(uuid "23141beb-0e89-4e70-8d52-f1c0f91bb49d")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.1)
+			)
+			(justify bottom mirror)
 		)
 	)
 	(segment
