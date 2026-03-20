@@ -8,7 +8,7 @@ Resistor configurations:
 * 1.4k + 133 = 150mA limit
 * 2k + 300 = 100mA limit
 
-The design also has 2 through holes so that it can be hand-modded to a different limit if necessary.
+The design also has 2 through holes so that it can be hand-modded to a different current limit if necessary. Simply de-solder the 2 resistors and solder a new resistance diagonally across the board.
 
 The left port is for the end device and the right port is to connect upstream.
 
