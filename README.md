@@ -1,14 +1,12 @@
 # Beyondex Limiter
 
-This is a simple USB 2.0 Type C current limiter built around the [MIC2544-1YM](resources/mic2544.pdf) current limiting IC. The default current limit is set at 200mA, but the resistors can be swapped out according to the data sheet for any limit bwteen 100mA to 1.5A.
+This is a simple USB 2.0 Type C current limiter built around the [SGM2523](resources/SGM2523.pdf) eFuse IC. The default current limit is set at 100mA, but the resistor can be swapped out according to the data sheet for any limit bwteen 100mA to 1.6A.
 
 Resistor configurations:
 
-* 1k + 150 = 200mA limit
-* 1.4k + 133 = 150mA limit
-* 2k + 300 = 100mA limit
+* 10k = 100mA limit, with ~0.3uS fast blow at 200mA
 
-The design also has 2 through holes so that it can be hand-modded to a different current limit if necessary. Simply de-solder the 2 resistors and solder a new resistance diagonally across the board.
+The design also has 2 through holes so that it can be hand-modded to a different current limit if necessary. Simply de-solder R2 and solder a new resistance between ILM and GND.
 
 The left port is for the end device and the right port is to connect upstream.
 
@@ -21,9 +19,9 @@ The back contains the specs and additional input/output labels.
 ## How to Order
 
 1. Go to the [latest release](https://github.com/KibbieKatt/BeyondexLimiter/releases)
-2. Download (choose 100mA, 150mA, or 200mA):
-    * `BeyondexLimiter_200mA.zip` - not the Source code!
-    * `BeyondexLimiter_200mA_bom.csv`
+2. Download:
+    * `BeyondexLimiter_100mA.zip` - not the Source code!
+    * `BeyondexLimiter_100mA_bom.csv`
     * `BeyondexLimiter_positions.csv`
 3. Upload the zip file to JLCPCB's quote page.
 4. Verify that board image is shown and size is auto populated.
