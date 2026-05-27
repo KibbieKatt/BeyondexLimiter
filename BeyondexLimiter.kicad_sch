@@ -3150,7 +3150,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.172 114.3 90)
 			(hide yes)
 			(show_name no)
@@ -4457,7 +4457,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "BeyondexLimiter:TestPoint_Plated_Hole_D0.6mm"
+		(property "Footprint" "BeyondexLimiter:TestPoint_Plated_Hole_D0.6mm_Asymmetric"
 			(at 113.03 104.14 0)
 			(hide yes)
 			(show_name no)
