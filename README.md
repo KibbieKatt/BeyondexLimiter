@@ -1,12 +1,16 @@
 # Beyondex Limiter
 
-This is a simple USB 2.0 Type C current limiter built around the [SGM2523](resources/SGM2523.pdf) eFuse IC. The default current limit is set at 100mA, but the resistor can be swapped out according to the data sheet for any limit bwteen 100mA to 1.6A.
+This is a simple USB 2.0 Type C current limiter built around the [CN5711](resources/CN5711.pdf) current regulation IC. The default current limit is adjustable in the range of ~70mA to ~500mA using the onboard potentiometer, but the upper limit resistor and potentiometer can be removed in favor of a fixed through-hole resistor set for fixed operation with a limit up to 1.5A.
 
-Resistor configurations:
+Resistor Configuration:
 
-* 10k = 100mA limit, with ~0.3uS fast blow at 200mA
+The current limit in amps is determined using the formula 1800 / ISET, where ISET is the resistance in ohms.
 
-The design also has 2 through holes so that it can be hand-modded to a different current limit if necessary. Simply de-solder R2 and solder a new resistance between ILM and GND.
+The maximum current resistor provides a minimum resistance of 3600 ohms, so when the potentiometer is turned fully clockwise adding no extra resistance, the limit is 1800 / 3600 = 0.5A.
+
+When the potentiometer is turned couterclockwise to its full resistance of 20k ohms, the total resistance is 23.6k ohms, so the limit is 1800 / 23600 = 0.076A, or ~76mA.
+
+To fix the limiter to a non-adjustable limit, remove R1 or the potentiometer and solder a resistance between the ISET and GND through holes.
 
 The left port is for the end device and the right port is to connect upstream.
 
@@ -20,9 +24,9 @@ The back contains the specs and additional input/output labels.
 
 1. Go to the [latest release](https://github.com/KibbieKatt/BeyondexLimiter/releases)
 2. Download:
-    * `BeyondexLimiter_100mA.zip` - not the Source code!
-    * `BeyondexLimiter_100mA_bom.csv`
-    * `BeyondexLimiter_positions.csv`
+    * `BeyondexLimiter.zip` - not the Source code!
+    * `bom.csv`
+    * `positions.csv`
 3. Upload the zip file to JLCPCB's quote page.
 4. Verify that board image is shown and size is auto populated.
     * If it doesn't show the PCB image or size after uploading completes, try making an account, uploading the file, and checking Projects > Quotes if it still doesn't show up.
@@ -32,7 +36,7 @@ The back contains the specs and additional input/output labels.
 8. Confirm the PCB shown (it will show the bare board without components) by clicking Next again
 9. Upload the BOM (`bom.csv`) and CPL (`positions.csv`), press "Process BOM & CPL"
 10. The list of components will be shown.
-    * This is where the resistor values can be swapped out to change the current limit.
+    * This is where the resistor values can be swapped out if you would like a different maximum to the adjustable value.
     * Review the matched part columns for each component, they should be pre-filled using the parts I used.
     * If any part I used is no longer available, you will need to search for the same or equivalent replacement.
     * Click on any row and use "Search Part" to swap them out.
