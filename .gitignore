@@ -2,3 +2,4 @@ BeyondexLimiter-backups/
 BeyondexLimiter.bak
 *.lck
 production/
+.history/
